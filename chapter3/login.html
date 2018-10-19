@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>[Vue.js]Chapter3</title>
+    <script src="../vue.js"></script>
+  </head>
+  <body>
+    <!-- Chapter3 -->
+    <div id="login">
+      <user-login></user-login>
+    </div>
+  </body>
+  <script type="text/x-template" id="login-template">
+    <div id="login-template">
+      <div>
+        <input type="text" placeholder="ログインID" v-model="userId">
+      </div>
+      <div>
+        <input type="password" placeholder="パスワード" v-model="password">
+      </div>
+      <button @click="login()">ログイン</button>
+    </div>
+  </script>
+  <script src="js/login.js"></script>
+</html>
