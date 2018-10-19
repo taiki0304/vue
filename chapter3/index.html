@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>[Vue.js]Chapter3</title>
+    <script src="../vue.js"></script>
+  </head>
+  <body>
+    <!-- Chapter3 -->
+    <div id="fruit-counter">
+      <div v-for="fruit in fruits">
+        {{ fruit.name }}: <counter-button v-on:increment="incrementCartStatus()"><counter-button>
+      </div>
+      <p>合計: {{ total }}</p>
+    </div>
+  </body>
+  <script src="js/app.js"></script>
+</html>
